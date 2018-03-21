@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+/* box size(width and height) continues from content to padding and finally to border */
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Rubik', verdana, sans-serif;
+}
+
+header {
+    /* An image needs to has transparent background so that it won't block background-color*/
+    background-image: url(images/teatime_primary.png);
+    background-repeat: repeat;
+    background-color: #c6a8b4;
+}
+
+img {
+    width: 100%;
+}
+
+/* the container of img */
+.logo {
+    background-color: #f1ede7;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 42%;
+    min-width: 300px;
+    padding: 3em 3em 0 3em;
+    /* auto tells the browser to automatically determine the left and right margins itself, which it does by setting them equally. The object will sit centrally within it's parent container*/
+    margin: 0 auto;
+}
+
+/*
+main {
+    padding: 3em;
+    margin: 0 auto;
+}
+*/
+
+section {
+    /* Make full screen sections with 1 line of CSS: 1vh = 1% of browser’s height */
+    height: 100vh;
+    /*padding: 3em;
+    margin: 0 auto;*/
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.section-even {
+    background-color: #FE4B74;
+    color: white;
+}
+
+.section-odd {
+    
+}
+
+.section1-h1 {
+    font-size: 2.5em;
+    text-align: center;
+
+    /*padding: 100% 0;*/
+}
+
+.section-hello {
+    background-color: #eceeef;
+    color:black;
+}
+
+.section-sleepy {
+    background-image: url(images/exhausted.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* https://css-tricks.com/almanac/properties/b/background-size/ */
+    background-size: cover;    
+}
+
+.section-excited {
+    background-image: url(images/excited.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.style-excited-words {
+    padding: 2rem;
+}
+
+.section-sleepy-words {
+    /*transform: translate(50%, 50%);*/
+    max-width: 350px;
+    background-color: rgba(66, 66, 66, 0.6);
+    color: white;
+    float: right;
+    padding: 1em;
+    margin: 2em 1em 0 1em;
+    
+}
+
+.section-sleepy-words-list {
+    padding: 0 0 0 1em;
+    font-size: 1.1em;
+}
+
+.section-answer {
+    background-image: url(images/answer.jpeg);
+    background-size: cover;
+}
+
+.section-lake {
+    background-image: url(images/lake.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.section-action {
+    background-image: url(images/drinking.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 80vh 0 0 2rem;
+    color: white;
+}
+
+.section-description {
+    background-color: #eceeef;
+    padding: 2rem;
+}
+
+.row {
+    height: 100%;
+    /* The display property specifies the display behavior of an element. */
+    /* Displays an element as a block-level flex container */
+    display: flex;
+}
+
+.center {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column1 {
+    flex: 50%;
+}
+
+.column2 {
+    flex: 50%;
+    background-image: url(images/empathy.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+
+.bottom {
+    font-size: 0.5em;
+    color:white;
+    padding: 0.4em;
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-end;
+}
+.footnote {
+    color: white;
+    height: 100%;
+    /*
+    font-size: 0.5em;
+    color:white;
+    padding: 0.4em;
+    float: right;
+    */
+}
+
+.margin {
+    margin: 2em;
+    display: block;
+}
+
+.boost-image-style {
+    display: block;
+    margin-top: 1em;
+    max-height: 80vh;
+    max-width: 800px;
+}
+
+/*
+.boost-image-style { 
+  height: 100%;
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-image: url(images/boost_brain.jpg);
+}
+*/
+
+.tap-water {
+    padding: 2rem 0 0 2rem;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .section-sleepy-words {
+        max-width: 700px;
+    }
+    .section-sleepy-words-list {
+        font-size: 1.4em;
+    }
+    .understand {
+        font-size: 2em;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    .boost-image-style {
+        float: left;
+        max-width: 45%;
+        margin-right: 2em;   
+    }
+    .persuasion-lists {
+        font-size: 1.4em;
+        
+    }
+    .tap-water {
+        padding: 50vh 4rem 0 0;
+        text-align: right;
+        color: black;
+    }
+    
+    .style-excited-words {
+        text-align: right;
+        padding: 50vh 4rem 0 0;
+    }
+    
+    .section-action {
+        font-size: 1.4rem;
+    }
+    
+}
