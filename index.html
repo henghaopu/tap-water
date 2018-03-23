@@ -14,13 +14,16 @@
         <div class="container">
             
             <main>
-                <section class="section-hello center">
+                <section class="section-hello center flex-container">
                     <h1>Hello bookworms,</h1>
+                    <button id="btnDown0" class="align-bottom">
+                        <img src="images/arrow.svg">
+                    </button>
                 </section>
                 
-                <section class="section-sleepy">
+                <section class="section-sleepy" style="position: relative;">
                     <div class="section-sleepy-words">
-                        <h1>Do you</h1>
+                        <h1>Do you&hellip;</h1>
                         <!--style="list-style-type:circle;list-style-position:inside;"-->
                         <ul class="section-sleepy-words-list" >
                             <li><span style="margin-left: -0.2em;">feel sleepy while reading?</span></li>
@@ -28,12 +31,15 @@
                             <li><span style="margin-left: -0.2em;">get a headache after studying too long?</span></li>
                         </ul>
                     </div>
+                    <button id="btnDown1" class="align-bottom">
+                        <img src="images/arrow.svg">
+                    </button>
                     <!--div class="footnote">
                         <p style="vertical-align:bottom;height:inherit;">Photo by energepic.com from Pexels/</p>
                     </div-->
                 </section>
                 
-                <section class="section-understand">
+                <section class="section-understand" style="position: relative;">
                     <div class="row">
                         <div class="center column1">
                             <p class="understand">WE UNDERSTAND YOUR NEEDS.</p>
@@ -43,47 +49,62 @@
                             <p>Photo by Annie Spratt on Unsplash</p>
                         </div>
                     </div>
-                    
+                    <button id="btnDown2" class="align-bottom">
+                        <img src="images/arrow.svg">
+                    </button>
                     <!--h1>WE UNDERSTAND YOUR NEEDS.</h1>
                     <img src="images/empathy.jpg" alt="empathy"-->
                     
                 </section>
                 <!--why this section border is fixed small -->
-                <section class="margin">
-                    <h2>We are here to provide you a solution that can boost your brain <b>14%</b> faster than usual.</h2>
+                <section class="boost-block" style="position: relative;">
+                    <h2 style="padding:1rem;">We are here to provide you a solution that can boost your brain <b>14%</b> faster than usual.</h2>
                     
                     <img class="boost-image-style" src="images/boost_brain.jpg">
 
-                    <ul class="persuasion-lists" style="list-style-type:circle;list-style-position: inside; margin-top: 1em;">
+                    <ul class="persuasion-lists" style="list-style-type:circle;list-style-position: inside; padding: 1rem;">
                         <li><span style="margin-left: -0.2em;">It is <b>100% harmless</b> to your body.</span></li>
                         <li><span style="margin-left: -0.2em;">It is <b>convenient</b> and easy to access.</span></li>
                         <li><span style="margin-left: -0.2em;">Most importantly, It is <b>FREE</b>!</span></li>
                     </ul>
+                    <button id="btnDown3" class="align-bottom">
+                        <img src="images/arrow.svg">
+                    </button>
                     
                 </section>
                 
-                <section class="section-excited">
+                <section class="section-excited" style="position: relative;">
                     <div class="style-excited-words">
                         <h1>Are you excited?</h1>
                         <br>
                         <p>Do you Want to know what it is?</p>
                     </div>
+                    <button id="btnDown4" class="align-bottom">
+                        <img src="images/arrow.svg">
+                    </button>
                 </section>
                 
-                <section class="section-answer">
+                <section class="section-answer" style="position: relative;">
                     <h1 class="tap-water">It’s <b>TAP WATER</b>!</h1>
+                    <button id="btnDown5" class="align-bottom">
+                        <img src="images/arrow.svg">
+                    </button>
                 </section>
                 
-                <section class="section-description">
+                <section class="section-description" style="position: relative;">
                     <h1>We provide</h1> 
                     <h1><b>clean</b>, <b>cool</b>, and <b>fresh</b> tap water.</h1>
                     <p style="margin-top:1rem;">Scientists have proven that tap water can help with <b>studying</b>, <b>productivity</b>, and <b>creativity</b>.</p>
+                    <button id="btnDown6" class="align-bottom">
+                        <img src="images/arrow.svg">
+                    </button>
                 </section>
                 
                 <section class="section-action">
                     <p>Don't hesitate to save your money.</p>
                     <p>Forget the bottle water.</p>
-                    <p>Get tap water today!</p>
+                    <p>Drink from the tap today!</p>
+                    <!--p>Get tap water today!</p-->
                 </section>
                 
                 <!--div>
@@ -121,6 +142,8 @@
 
             <footer></footer>
         </div>
-    </body>
-
+        
+        <script src="script.js"></script>
+        
+    </body>    
 </html>

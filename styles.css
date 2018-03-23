@@ -63,6 +63,15 @@ h1 {
     
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#btnDown1 {
+    position: absolute;
+}
+
 .section1-h1 {
     font-size: 2.5em;
     text-align: center;
@@ -122,9 +131,9 @@ h1 {
 
 .section-action {
     background-image: url(images/drinking.jpg);
-    background-position: center;
+    background-position: 100%;
     background-size: cover;
-    padding: 80vh 0 0 2rem;
+    padding: 75vh 0 0 2rem;
     color: white;
 }
 
@@ -145,6 +154,15 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.align-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -24px; /* -12 -12*/
+    padding: 1em;
+    opacity: 0.8;
 }
 
 .column1 {
@@ -177,16 +195,15 @@ h1 {
     */
 }
 
-.margin {
-    margin: 2em;
+.boost-block {
     display: block;
 }
 
 .boost-image-style {
     display: block;
-    margin-top: 1em;
     max-height: 80vh;
     max-width: 800px;
+    padding: 1rem;
 }
 
 /*
@@ -244,5 +261,4 @@ h1 {
     .section-action {
         font-size: 1.4rem;
     }
-    
 }
