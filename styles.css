@@ -20,6 +20,10 @@ header {
     background-color: #c6a8b4;
 }
 
+button {
+        visibility: hidden;
+    }
+
 img {
     width: 100%;
 }
@@ -260,5 +264,9 @@ h1 {
     
     .section-action {
         font-size: 1.4rem;
+    }
+    
+    button {
+        visibility: visible;
     }
 }
