@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 /* box size(width and height) continues from content to padding and finally to border */
-    box-sizing: border-box;
+    box-sizing: border-box;   
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,8 +24,28 @@ button {
         visibility: hidden;
     }
 
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: skyblue;
+}
+
 img {
     width: 100%;
+}
+
+li {
+    line-height: 1.4rem;
+}
+
+.section-action-words {
+    line-height: 1.4rem;
 }
 
 /* the container of img */
@@ -39,13 +59,6 @@ img {
     /* auto tells the browser to automatically determine the left and right margins itself, which it does by setting them equally. The object will sit centrally within it's parent container*/
     margin: 0 auto;
 }
-
-/*
-main {
-    padding: 3em;
-    margin: 0 auto;
-}
-*/
 
 section {
     /* Make full screen sections with 1 line of CSS: 1vh = 1% of browser’s height */
@@ -66,14 +79,13 @@ h1 {
 .section-odd {
     
 }
-
+/* The Flexible Box Layout Module is a way to design flexible responsive layout structure without using float or positioning. */ 
+/* step 1: define a flex parent container */
 .flex-container {
-  display: flex;
-  flex-direction: column;
-}
-
-#btnDown1 {
-    position: absolute;
+    /* The flex container becomes flexible by setting the display property to flex */
+    display: flex;
+    /* The flex-direction property defines in which direction the container wants to stack the flex items. The column value stacks the flex items from top to bottom */
+    flex-direction: column;
 }
 
 .section1-h1 {
@@ -89,7 +101,7 @@ h1 {
 }
 
 .section-sleepy {
-    background-image: url(images/exhausted.jpg);
+    background-image: url(images/exhausted.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     /* https://css-tricks.com/almanac/properties/b/background-size/ */
@@ -101,6 +113,7 @@ h1 {
     background-position: center;
     background-size: cover;
 }
+
 .style-excited-words {
     padding: 2rem;
 }
@@ -113,7 +126,6 @@ h1 {
     float: right;
     padding: 1em;
     margin: 2em 1em 0 1em;
-    
 }
 
 .section-sleepy-words-list {
@@ -160,13 +172,29 @@ h1 {
     justify-content: center;
 }
 
-.align-bottom {
+.being-a-relative {
+    position: relative;
+}
+
+.bottom-centered-alignment {
+    /* The position property specifies the type of positioning method used for an element. Elements are then positioned using the top, bottom, left, and right properties. */
+    /* An absolute positioned element is positioned relative to its parent position if its parent set itself to be a relative, otherwise, this child element will respond to the document */
     position: absolute;
     bottom: 0;
     left: 50%;
+    
     margin-left: -24px; /* -12 -12*/
     padding: 1em;
     opacity: 0.8;
+}
+
+.bottom-right-alignment {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.5em;
+    color:white;
+    padding: 0.4em;
 }
 
 .column1 {
@@ -188,26 +216,21 @@ h1 {
     align-items: flex-end;
     justify-content:flex-end;
 }
-.footnote {
-    color: white;
-    height: 100%;
-    /*
-    font-size: 0.5em;
-    color:white;
-    padding: 0.4em;
-    float: right;
-    */
-}
 
 .boost-block {
     display: block;
+}
+
+.boost-word-style {
+    font-size: 1.6em;
+    padding:1rem;
 }
 
 .boost-image-style {
     display: block;
     max-height: 80vh;
     max-width: 800px;
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
 }
 
 /*
@@ -225,6 +248,12 @@ h1 {
     color: white;
 }
 
+footer {
+    text-align: center;
+    font-size: 0.5em;
+    padding: 1em;
+}
+
 @media screen and (min-width: 768px) {
     .section-sleepy-words {
         max-width: 700px;
@@ -238,18 +267,23 @@ h1 {
     h1 {
         font-size: 2.2em;
     }
-    
     h2 {
         font-size: 1.8rem;
     }
+    li {
+        line-height: 1.5em;
+    }
+    .section-action-words {
+        line-height: 1.5em;
+    }
+    
     .boost-image-style {
         float: left;
         max-width: 45%;
         margin-right: 2em;   
     }
     .persuasion-lists {
-        font-size: 1.4em;
-        
+        font-size: 1.4em;  
     }
     .tap-water {
         padding: 50vh 4rem 0 0;
